@@ -1,0 +1,17 @@
+// @include font (Montserrat ,montserrat-v23-latin_cyrillic-700, 700, normal)
+@include font (TTNorms-Bold ,TTNorms-Bold, 700, normal);
+@include font (TTNorms-Medium ,TTNorms-Medium, 500, normal);
+@include font (TTNorms-Regular ,TTNorms-Regular, 400, normal);
+
+%norms-bold{
+  font-family: "TTNorms-Bold";
+  font-weight: 700;
+}
+%norms-medium{
+  font-family: "TTNorms-Bold";
+  font-weight: 500;
+}
+%norms-regular{
+  font-family: "TTNorms-Bold";
+  font-weight: 400;
+}
