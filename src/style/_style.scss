@@ -1,0 +1,78 @@
+.experience-services{
+  position: relative;
+  background: $gradient-supersoft;
+  margin-bottom: 20px;
+  border-radius: 0px 0px 12px 12px;
+  &::before,&::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 12px 12px;
+  }
+  &::before{
+    background: #CACADB;
+    bottom: -10px;
+    width: calc(100vw - 40px);
+  }
+  &::after{
+    background: #E7E7F2;
+    bottom: -20px;
+    width: calc(100vw - 60px);
+  }
+}
+
+
+.link {
+  @extend %norms-bold;
+  @include fontsize(14,17);
+  letter-spacing: 1px;
+  color: $white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  path{
+    transition: all 0.3s;
+  }
+  &:hover{
+    color: $accent;
+    opacity: 0.7;
+      path{
+        stroke: $accent;
+      }
+    }
+}
+
+.title{
+  @extend %norms-bold;
+    @include fontsize(42,50);
+    background: $gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $tablet-small) {
+      @include fontsize(32,38);
+    }
+}
+
+.text {
+  @extend %norms-medium;
+  @include fontsize(21,30);
+  color: $black;
+}
+
+.team-picture {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  max-width: 2000px;
+}
+
+.none {
+  display: none!important;
+}
+
+
+

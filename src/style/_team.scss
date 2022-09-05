@@ -1,0 +1,114 @@
+.team {
+  padding-top: 40px;
+  position: relative;
+  &__slider {
+    margin-bottom: 20px;
+  }
+
+  &__slide {
+    display: flex;
+    background: $grey-bg;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__slide-img {
+    @media (max-width: $tablet-wide) {
+      display: none;
+    }
+  }
+
+  &__slide-info {
+    padding: 40px;
+    @media (max-width: $tablet-wide) {
+      padding: 20px;
+    }
+  }
+
+  &__link {
+    color: $active-regular;
+    opacity: 1;
+    margin-bottom: 3px;
+
+    path{
+      stroke: $active-regular;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @media (max-width: $desktop) {
+      @include fontsize(35,42);
+    }
+    @media (max-width: $tablet-wide) {
+      @include fontsize(32,38);
+      margin-bottom: 10px;
+    }
+    @media (max-width: $phone) {
+      @include fontsize(28,35);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__wrapper-info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__mobile-img {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; 
+    display: none;
+    @media (max-width: $tablet-wide) {
+      display: block;
+    }
+  }
+
+  &__text-wrapper {
+  }
+
+  &__name-text {
+    @extend %norms-regular;
+    @include fontsize(18,21);
+    color: $grey-text;
+    margin-bottom: 5px;
+  }
+
+  &__post-text {
+    @extend %norms-regular;
+    @include fontsize(16,22);
+    color: $grey-text;
+  }
+
+  &__pagination{
+    position: static;
+    .swiper-pagination-bullet{
+      height: 16px;
+      width: 16px;
+      background: $active-regular;
+      opacity: 0.2;
+      margin: 0 7px!important;
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+    .swiper-pagination-bullet-active{
+      opacity: 1!important;
+    }
+  }
+}
+.container {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.image {
+}
+.link {
+}
+.title {
+}

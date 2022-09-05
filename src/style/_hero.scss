@@ -1,0 +1,43 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 900px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 35.67%, #323264 100%), url('./img/hero/symbol-long-leg.svg') bottom center no-repeat ,  url('./img/hero/pattern.png') bottom no-repeat, $gradient-soft  ;
+
+  @media (max-width: $phone-wide) {
+    background: linear-gradient(180deg, rgba(50, 50, 100, 0) 35.67%, #323264 100%), url('./img/hero/symbol-long-leg.svg') bottom center no-repeat , $gradient-soft  ;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title{
+    @extend %norms-bold;
+    @include fontsize(38, 45);
+    text-align: center;
+
+    max-width: 500px;
+    color: $white;
+
+    padding: 20px;
+
+    @media (max-width: $phablet) {
+      max-width: 450px;
+    }
+  }
+
+  &__scroll-down{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+
+    height: 42px;
+    width: 42px;
+    background: url('./img/scroll-down.svg') center no-repeat;
+  }
+}

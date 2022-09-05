@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,534 @@
   <link rel="icon" href="img/favicon.png" type="image/png">
   <title>hlegals</title>
 </head>
+
 <body>
   <div class="site-container">
     <header class="header">
-      <div class="container">
-        
+      <div class="container header__wrapper">
+        <a href="index.html" class="header__home-link">
+          <picture>
+            <source srcset="./img/header/logo-mobile.svg" media="(max-width: 768px)" alt="logo">
+            <source srcset="./img/header/logo.svg" alt="logo">
+            <img loading="lazy" src="./img/header/logo.svg">
+          </picture>
+        </a>
+        <div class="header__contacts contacts">
+          <ul class="lang">
+            <li class="lang__item">
+              <a href="#" class="lang__btn lang__btn--active">УК</a>
+            </li>
+            <li class="lang__item">
+              <a href="#" class="lang__btn">EN</a>
+            </li>
+          </ul>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__location">Одеса, Адміральський пр., 3</p>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__tell" href="tel:+380503901591">+38 (050) 390 15 91</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__facebook" href="#">
+                <svg width="24" height="24">
+                  <path
+                    d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <button class="close-button btn-reset">
+              <span class="close-button__item close-button__item--left"></span>
+              <span class="close-button__item close-button__item--rigth"></span>
+            </button>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">команда</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">публікації</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger-menu btn-reset">
+          <span class="bar top"></span>
+          <span class="bar middle"></span>
+          <span class="bar bottom"></span>
+        </button>
       </div>
     </header>
     <main class="page">
-      <section class="hero"></section>
+      <section class="hero">
+        <h1 class="hero__title">системний адміністратор правових рішень</h1>
+        <button class="hero__scroll-down" type="button"></button>
+      </section>
+      <div class="experience-services">
+        <section class="experience">
+          <div class="container experience__wrapper">
+            <div class="experience__wrapper-elements">
+              <div id="experience__pagination" class=" pagination">
+              </div>
+              <div id="experience__scrollbar" class=" swiper-scrollbar"></div>
+            </div>
+            <div class="experience__slider swiper">
+              <div class="swiper-wrapper">
+                <div data-name="Послідовні" class="experience__slide swiper-slide">
+                  <h4 class="experience__suptitle">Послідовні</h4>
+                  <h2 class="experience__title">Перевертаємо уявлення про юридичні послуги</h2>
+                  <p class="experience__description">Консолідуючи багаторічний досвід і практику, юристи компанії
+                    супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них
+                    формують практику застосування морського права в Україні.</p>
+                </div>
+                <div data-name="Клієнтоорієнтовані" class="experience__slide swiper-slide">
+                  <h4 class="experience__suptitle">Клієнтоорієнтовані</h4>
+                  <h2 class="experience__title">Перевертаємо уявлення про юридичні послуги</h2>
+                  <p class="experience__description">Консолідуючи багаторічний досвід і практику, юристи компанії
+                    супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них
+                    формують практику застосування морського права в Україні.</p>
+                </div>
+                <div data-name="Інноваційні" class="experience__slide swiper-slide">
+                  <h4 class="experience__suptitle">Інноваційні</h4>
+                  <h2 class="experience__title">Перевертаємо уявлення про юридичні послуги</h2>
+                  <p class="experience__description">Консолідуючи багаторічний досвід і практику, юристи компанії
+                    супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них
+                    формують практику застосування морського права в Україні.</p>
+                </div>
+                <div data-name="Бізнес-орієнтовані юристи" class="experience__slide swiper-slide">
+                  <h4 class="experience__suptitle">Бізнес-орієнтовані юристи</h4>
+                  <h2 class="experience__title">Перевертаємо уявлення про юридичні послуги</h2>
+                  <p class="experience__description">Консолідуючи багаторічний досвід і практику, юристи компанії
+                    супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них
+                    формують практику застосування морського права в Україні.</p>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services">
+          <div class="container">
+            <div class="services__title-wrapper">
+              <a class="services__link link" href="#">послуги
+                <svg width="12" height="12" fill="none">
+                  <path d="M3.5 1.5L8 6L3.5 10.5" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+              <h2 class="services__title title">Що ми вміємо робити краще за інших?</h2>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <div class="services__item-wrapper">
+                  <div class="services__item-img">
+                    <picture>
+                      <source srcset="./img/services/services-mobile-icon1.svg" media="(max-width: 480px)" alt="logo">
+                      <img loading="lazy" src="./img/services/services-icon1.svg">
+                    </picture>
+                  </div>
+                  <h3 class="services__item-title">IT та електронна комерція</h3>
+                </div>
+                <p class="services__item-text">Нескінчений потік договорів, податкові питання, трудові відносини,
+                  корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й
+                  багато, щоб наймати інхауз-юриста. </p>
+              </li>
+              <li class="services__item">
+                <div class="services__item-wrapper">
+                  <div class="services__item-img">
+                    <picture>
+                      <source srcset="./img/services/services-mobile-icon2.svg" media="(max-width: 480px)" alt="logo">
+                      <img loading="lazy" src="./img/services/services-icon2.svg">
+                    </picture>
+                  </div>
+                  <h3 class="services__item-title">Комплексний щоденний юридичний супровід</h3>
+                </div>
+                <p class="services__item-text">До того ж, з часом робота стане однотипною і нецікавою для штатного
+                  юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері
+                  інформаційних технологій.</p>
+              </li>
+              <li class="services__item">
+                <div class="services__item-wrapper">
+                  <div class="services__item-img">
+                    <picture>
+                      <source srcset="./img/services/services-mobile-icon3.svg" media="(max-width: 480px)" alt="logo">
+                      <img loading="lazy" src="./img/services/services-icon3.svg">
+                    </picture>
+                  </div>
+                  <h3 class="services__item-title">Структуризація корпоративних відносин</h3>
+                </div>
+                <p class="services__item-text">Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу
+                  команду, які впишуться в повсякденне життя вашої компанії.</p>
+              </li>
+              <li class="services__item">
+                <div class="services__item-wrapper">
+                  <div class="services__item-img">
+                    <picture>
+                      <source srcset="./img/services/services-mobile-icon4.svg" media="(max-width: 480px)" alt="logo">
+                      <img loading="lazy" src="./img/services/services-icon4.svg">
+                    </picture>
+                  </div>
+                  <h3 class="services__item-title">Побудовa договірних відносин</h3>
+                </div>
+                <p class="services__item-text">Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист.
+                  Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість
+                  очікування статусу update.</p>
+              </li>
+              <li class="services__item">
+                <div class="services__item-wrapper">
+                  <div class="services__item-img">
+                    <picture>
+                      <source srcset="./img/services/services-mobile-icon5.svg" media="(max-width: 480px)" alt="logo">
+                      <img loading="lazy" src="./img/services/services-icon5.svg">
+                    </picture>
+                  </div>
+                  <h3 class="services__item-title">Захист бізнесу, інтелектуальної власності</h3>
+                </div>
+                <p class="services__item-text">А весь інший час він працюватиме над новими різноплановими проектами,
+                  тому вже точно не зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon
+                  Partners замість корпоративного юриста.</p>
+              </li>
+              <li class="services__item">
+                <div class="services__item-wrapper">
+                  <div class="services__item-img">
+                    <picture>
+                      <source srcset="./img/services/services-mobile-icon6.svg" media="(max-width: 480px)" alt="logo">
+                      <img loading="lazy" src="./img/services/services-icon6.svg">
+                    </picture>
+                  </div>
+                  <h3 class="services__item-title">Судове представництво</h3>
+                </div>
+                <p class="services__item-text">Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний
+                  бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="team">
+        <div class="container">
+          <div class="team__slider swiper ">
+            <div class="swiper-wrapper">
+              <div class="team__slide swiper-slide">
+                <div class="team__slide-img">
+                  <picture>
+                    <source srcset="../dist/img/team-oleksandr.webp" type="image/webp">
+                    <img loading="lazy" src="./img/team/team-oleksandr.jpg" class="image" width="413" height="500"
+                      alt="Oleksandr Kath ">
+                  </picture>
+                </div>
+                <div class="team__slide-info">
+                  <a class="team__link link" href="#">команда
+                    <svg width="12" height="12" fill="none">
+                      <path d="M3.5 1.5L8 6L3.5 10.5" stroke="white" stroke-width="2" />
+                    </svg>
+                  </a>
+                  <h2 class="team__title title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                  <div class="team__wrapper-info">
+                    <div class="team__mobile-img">
+                      <picture>
+                        <source srcset="../dist/img/team-oleksandr.webp" type="image/webp">
+                        <img loading="lazy" src="./img/team/team-oleksandr.jpg" class="image" width="60" height="60"
+                          alt="Oleksandr Kath ">
+                      </picture>
+                    </div>
+                    <div class="team__text-wrapper">
+                      <p class="team__name-text">Олександр Кац</p>
+                      <p class="team__post-text">Керуючий партнер</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team__slide swiper-slide">
+                <div class="team__slide-img">
+                  <picture>
+                    <source srcset="../dist/img/team-oleksandr.webp" type="image/webp">
+                    <img loading="lazy" src="./img/team/team-oleksandr.jpg" class="image" width="413" height="500"
+                      alt="Oleksandr Kath ">
+                  </picture>
+                </div>
+                <div class="team__slide-info">
+                  <a class="team__link link" href="#">команда
+                    <svg width="12" height="12" fill="none">
+                      <path d="M3.5 1.5L8 6L3.5 10.5" stroke="white" stroke-width="2" />
+                    </svg>
+                  </a>
+                  <h2 class="team__title title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                  <div class="team__wrapper-info">
+                    <div class="team__mobile-img">
+                      <picture>
+                        <source srcset="../dist/img/team-oleksandr.webp" type="image/webp">
+                        <img loading="lazy" src="./img/team/team-oleksandr.jpg" class="image" width="60" height="60"
+                          alt="Oleksandr Kath ">
+                      </picture>
+                    </div>
+                    <div class="team__text-wrapper">
+                      <p class="team__name-text">Олександр Кац</p>
+                      <p class="team__post-text">Керуючий партнер</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team__slide swiper-slide">
+                <div class="team__slide-img">
+                  <picture>
+                    <source srcset="../dist/img/team-oleksandr.webp" type="image/webp">
+                    <img loading="lazy" src="./img/team/team-oleksandr.jpg" class="image" width="413" height="500"
+                      alt="Oleksandr Kath ">
+                  </picture>
+                </div>
+                <div class="team__slide-info">
+                  <a class="team__link link" href="#">команда
+                    <svg width="12" height="12" fill="none">
+                      <path d="M3.5 1.5L8 6L3.5 10.5" stroke="white" stroke-width="2" />
+                    </svg>
+                  </a>
+                  <h2 class="team__title title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                    вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                  <div class="team__wrapper-info">
+                    <div class="team__mobile-img">
+                      <picture>
+                        <source srcset="../dist/img/team-oleksandr.webp" type="image/webp">
+                        <img loading="lazy" src="./img/team/team-oleksandr.jpg" class="image" width="60" height="60"
+                          alt="Oleksandr Kath ">
+                      </picture>
+                    </div>
+                    <div class="team__text-wrapper">
+                      <h4 class="team__name-text">Олександр Кац</h4>
+                      <p class="team__post-text">Керуючий партнер</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__pagination swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="cases">
+        <div class="container">
+          <ul class="cases__list">
+            <li class="cases__item">
+              <h3 class="cases__title">Успішні кейси</h3>
+              <div class="cases__item-wrapper">
+                <p class="cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+                <p class="cases__sub-text">Hillel IT School</p>
+              </div>
+            </li>
+            <li class="cases__item">
+              <div class="cases__item-wrapper">
+                <p class="cases__text">Підготовка комплексного юридичного висновку для європейського банку</p>
+                <p class="cases__sub-text">WannaBiz</p>
+              </div>
+            </li>
+            <li class="cases__item">
+              <div class="cases__item-wrapper">
+                <p class="cases__text">Супровід проекту з купівлі-продажу сільськогосподарської продукції</p>
+                <p class="cases__sub-text">tapgerine</p>
+              </div>
+            </li>
+            <li class="cases__item">
+              <div class="cases__item-wrapper">
+                <p class="cases__text">Представництво інтересів великого зернотрейдера в податковому спорі</p>
+                <p class="cases__sub-text">3D LOOK</p>
+              </div>
+            </li>
+            <li class="cases__item">
+              <div class="cases__item-wrapper">
+                <p class="cases__text">Оскарження податкових повідомлень-рішень ДФС</p>
+                <p class="cases__sub-text">adtelligent</p>
+              </div>
+            </li>
+            <li class="cases__item">
+              <div class="cases__item-wrapper">
+                <p class="cases__text">Супровід проекту з кредитування агротрейдерів мальтійським банком</p>
+                <p class="cases__sub-text">Clikky</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients">
+        <h3 class="clients__title">Вже довіряють нам</h3>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile1.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile1.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company1.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company1.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile2.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile2.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company2.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company2.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile3.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile3.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company3.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company3.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile4.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile4.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company4.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company4.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile5.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile5.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company5.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company5.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile6.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile6.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company6.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company6.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile7.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile7.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company7.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company7.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile8.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile8.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company8.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company8.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile9.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile9.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company9.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company9.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile10.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile10.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company10.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company10.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile11.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile11.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company11.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company11.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture>
+              <!-- <source srcset="../dist/img/clients-company-mobile12.webp"  media="(max-width: 480px)" type="image/webp"> -->
+              <source srcset="./img/clients/clients-company-mobile12.jpg" media="(max-width: 480px)">
+              <!-- <source srcset="../dist/img/clients-company12.webp" type="image/webp"> -->
+              <img loading="lazy" src="./img/clients/clients-company12.jpg" class="image"
+                alt="hillel">
+            </picture>
+          </li>
+        </ul>
+      </section>
+      <section class="publications">
+        <div class="container">
+          <div class="publications__title-wrapper">
+            <a class="publications__link link" href="#">Публікації
+              <svg width="12" height="12" fill="none">
+                <path d="M3.5 1.5L8 6L3.5 10.5" stroke="white" stroke-width="2" />
+              </svg>
+            </a>
+            <h2 class="publications__title title">Нам є що розповісти</h2>
+          </div>
+          <ul class="publications__list">
+            <!-- <li class="publications__card card">
+              <a href="#" class="card__content-img">
+                <picture>
+                  <source srcset="../dist/img/publications-img1.webp" type="image/webp">
+                  <img loading="lazy" src="./img/publications/publications-img1.png" width="414" height="233">
+                </picture>
+              </a>
+              <div class="card__wrapper">
+                <a href="#" class="card__title">Equity associate</a>
+                <p class="card__subtitle">22 квітня</p>
+                <p class="card__text">На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…</p>
+              </div>
+              <a class="card__link" href="#"></a>
+            </li> -->
+          </ul>
+          <div class="publications__shade">
+            <button id="more-publicatoons" class="publications__more button btn-reset" type="button"><div class="spinner none"><div></div><div></div><div></div><div></div></div> Ще публікації</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <div class="footer__contacts-wrapper">
+              <p class="footer__location">Одеса, Адміральський пр., 3</p>
+              <a class="footer__look-map footer__dots" href="#">Подивитися на мапі</a>
+            </div>
+            <div class="footer__links-wrapper">
+              <a class="footer__facebook-link " href="#">
+                <svg width="38" height="38">
+                  <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
+                </svg>
+              </a>
+              <a class="footer__tell-link footer__dots" href="tel:+380503901591">+38 (050) 390 15 91</a>
+              <a class="footer__mail-link footer__dots" href="mailto:contact@hlegals.net">contact@hlegals.net</a>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__copy-text">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
 </body>
+
 </html>

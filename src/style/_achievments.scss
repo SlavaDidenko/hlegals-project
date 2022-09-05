@@ -1,0 +1,58 @@
+.achievments {
+  padding: 30px 60px;
+  background: $grey-bg;
+  border-radius: 12px 12px 0px 0px;
+
+  @media (max-width: $tablet-small) {
+    padding: 30px 20px;
+  }
+  &__title {
+    @extend %norms-bold;
+    @include fontsize(14,17);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main-regular;
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    margin-bottom: 30px;
+  }
+
+  &__slide-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 30px 24px;
+    background: $white;
+    border-radius: 12px;
+
+    @media (max-width: $tablet-small) {
+      padding: 14px 30px 14px;
+      img {
+        height: 32px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  &__pagination {
+    position: static;
+    .swiper-pagination-bullet{
+      height: 16px;
+      width: 16px;
+      background: $active-regular;
+      opacity: 0.2;
+      margin: 0 7px!important;
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+    .swiper-pagination-bullet-active{
+      opacity: 1!important;
+    }
+  }
+}

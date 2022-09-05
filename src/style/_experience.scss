@@ -1,0 +1,174 @@
+.experience {
+  padding: 80px 0;
+
+  @media (max-width:$tablet) {
+    padding: 40px 0 45px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media (max-width:$tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__slider {
+    max-height: 312px;
+    margin: 0;
+    padding-left: 40px;
+    max-width: 630px;
+
+    @media (max-width:$tablet-wide) {
+      padding-left: 20px;
+    }
+    @media (max-width:$tablet) {
+      padding: 0 0 20px ;
+      width: 100%;
+      max-height:fit-content;
+      overflow: visible;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__suptitle{
+    @extend %norms-bold;
+    @include fontsize(14,17);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: $gradient-red-text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 10px;
+    display: none;
+
+    @media (max-width:$tablet) {
+      display: block;
+    }
+  }
+
+  &__title {
+    @extend %norms-bold;
+    @include fontsize(32,38);
+    color: $white;
+
+    margin-bottom: 20px;
+
+    @media (max-width:$tablet-wide) {
+      @include fontsize(22,26);
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    @extend %norms-regular;
+    @include fontsize(21,30);
+    color: $white;
+    @media (max-width:$tablet-wide) {
+      @include fontsize(18,26);
+    }
+  }
+
+  #experience__pagination {
+    max-width: 400px;
+    width: 100%;
+    text-align: right;
+    transform: translate3d(0px, 0px, 0px);
+
+    @media (max-width:$tablet) {
+      display: flex;
+    }
+
+    .pagination__item{
+      @extend %norms-bold;
+      @include fontsize(42,50);
+      margin: 0 0 20px 0;
+      height: auto ;;
+      width: auto;
+      background: none;
+      @media (max-width:$tablet-wide) {
+        @include fontsize(35,42);
+        margin: 0 0 10px 0;
+      } 
+
+      @media (max-width:$tablet) {
+        background: $active-regular;
+        height: 16px;
+        width: 16px;
+        font-size: 0;
+      }
+    }
+
+    .swiper-pagination-bullet{
+      opacity: 1;
+      color: $grey-text;
+
+      &:hover{
+        border-radius: 0;
+        background: $gradient-red-text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      @media (max-width:$tablet) {
+        opacity: 0.2;
+        margin: 0 7px;
+        
+        &:hover{
+        opacity: 0.2;
+        border-radius: 50%;
+        background: $active-regular;
+        }
+      }
+    }
+
+    .swiper-pagination-bullet-active{
+      border-radius: 0;
+      background: $gradient-red-text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width:$tablet) {
+        border-radius: 50%;
+        opacity: 1!important;
+        background: $active-regular;
+      }
+    }
+  }
+
+
+  #experience__scrollbar{
+    width: 4px;
+    background: $grey-separator;
+    top: 1px;
+    right: 0;
+    border-radius: 0;
+    .swiper-scrollbar-drag{
+      background: $accent;
+      border-radius: 0;
+    }
+
+    @media (max-width:$tablet) {
+      display: none;
+    }
+  }
+
+  &__wrapper-elements {
+    position: relative;
+    padding-right: 45px;
+    @media (max-width:$tablet-wide) {
+      padding-right: 25px;
+    }
+    @media (max-width:$tablet) {
+      padding: 0;
+    }
+  }
+}

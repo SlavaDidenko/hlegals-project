@@ -33,8 +33,12 @@ module.exports = {
       template: './src/index.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'dou.html',
-      template: './src/dou.html',
+      filename: 'about.html',
+      template: './src/about.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'services.html',
+      template: './src/services.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

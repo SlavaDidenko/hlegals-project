@@ -1,0 +1,145 @@
+.footer {
+  background: $grey-bg;
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px 0 40px;
+    border-top: 4px solid $grey-separator;
+
+    @media (max-width: $tablet-wide) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &--services {
+      border: none;
+    }
+  }
+
+  &__contacts {
+    @media (max-width: $tablet-wide) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $phone-wide) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__contacts-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    @media (max-width: $phone-wide) {
+      flex-direction: column;
+    }
+  }
+
+  &__links-wrapper{
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $phone-wide) {
+      flex-direction: column;
+    }
+  }
+
+  &__location {
+    @extend %norms-regular;
+    @include fontsize(16,19);
+    color: $main-regular;
+    margin-right: 30px;
+
+    @media (max-width: $phone-wide) {
+      margin: 0 0 10px;
+
+    }
+  }
+
+  &__look-map {
+    @extend %norms-bold;
+    @include fontsize(12,14);
+    color: $active-regular;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover{
+      color: $accent;
+    }
+  }
+
+  &__facebook-link {
+    svg {
+      fill: $active-regular;
+      transition: all 0.3s;
+    }
+    &:hover{
+      svg {
+        fill: $accent;
+      }
+    }
+    @media (max-width: $phone-wide) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__tell-link {
+    @extend %norms-bold;
+    @include fontsize(16,19);
+    color: $main-alt;
+    margin-left: 10px;
+    transition: all 0.3s;
+    &:hover{
+      opacity: 0.8;
+    }
+
+    @media (max-width: $phone-wide) {
+      margin:  0 0 20px;
+    }
+  }
+
+  &__mail-link {
+    @extend %norms-bold;
+    @include fontsize(16,19);
+    color: $active-regular;
+    margin-left: 10px;
+    transition: all 0.3s;
+    &:hover{
+      color: $accent;
+    }
+    @media (max-width: $phone-wide) {
+      margin: 0;
+    }
+  }
+
+  &__copy-text {
+    @extend %norms-regular;
+    @include fontsize(16,19);
+    color: $grey-text;
+    text-align: center;
+  }
+
+  &__dots {
+    position: relative;
+    padding-left: 16px;
+    &::before{
+      content: '';
+      position: absolute;
+
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      height: 6px;
+      width: 6px;
+      background: $grey-text;
+      border-radius: 50%;
+    }
+    @media (max-width: $phone-wide) {
+      padding: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

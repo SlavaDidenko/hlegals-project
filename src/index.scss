@@ -1,12 +1,28 @@
 @import 'libs/normalize';
 @import 'libs/icons-style.css';
-@import 'style/settings';
 @import 'style/var';
+@import 'style/settings';
 @import 'style/mixins';
 @import 'style/fonts';
-
+////////
+@import '../node_modules/swiper/swiper-bundle.css';
 
 // @import 'style'
 @import 'style/style';
 @import 'style/header';
+@import 'style/burger';
 @import 'style/hero';
+@import 'style/experience';
+@import 'style/services';
+@import 'style/team';
+@import 'style/cases';
+@import 'style/clients';
+@import 'style/footer';
+@import 'style/publications';
+@import 'style/advantages';
+@import 'style/more-text';
+@import 'style/achievments';
+@import 'style/button';
+
+
+
