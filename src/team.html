@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>hlegals</title>
+</head>
+<body>
+  <div class="site-container">
+    <header class="header">
+      <div class="container header__wrapper">
+        <div class="header__logo">
+          <a href="index.html" class="header__home-link">
+            <picture>
+              <source srcset="./img/header/logo-mobile-on-white.svg" media="(max-width: 768px)" alt="logo">
+              <source srcset="./img/header/logo-on-white.svg" alt="logo">
+              <img loading="lazy" src="./img/header/logo-on-white.svg">
+            </picture>
+          </a>
+          <img class="header__slash" loading="lazy" src="./img/header/slash.svg" width="21" height="46" alt="slash">
+          <a href="team.html" class="header__current-page">команда</a>
+          <img class="header__symbol" loading="lazy" src="./img/hero/symbol.svg" width="41" height="46" alt="symbol">
+        </div>
+        <div class="header__contacts contacts">
+          <ul class="lang">
+            <li class="lang__item">
+              <a href="#" class="lang__btn lang__btn--active">УК</a>
+            </li>
+            <li class="lang__item">
+              <a href="#" class="lang__btn">EN</a>
+            </li>
+          </ul>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__location contacts__location--white-theme">Одеса, Адміральський пр., 3</p>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__tell contacts__tell--white-theme" href="tel:+380503901591">+38 (050) 390 15 91</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__facebook  contacts__facebook--white-theme" href="#">
+                <svg width="24" height="24">
+                  <path
+                    d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <button class="close-button btn-reset">
+              <span class="close-button__item close-button__item--left"></span>
+              <span class="close-button__item close-button__item--rigth"></span>
+            </button>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link nav__link--white-theme">про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link nav__link--white-theme">послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link  nav__link--active">команда</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--white-theme">публікації</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--white-theme">контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger-menu btn-reset">
+          <span class="bar bar-on-white top"></span>
+          <span class="bar bar-on-white middle"></span>
+          <span class="bar bar-on-white bottom"></span>
+        </button>
+      </div>
+    </header>
+    <main class="page">
+      <section class="our-team">
+        <div class="container">
+          <h2 class="our-team__main-title  title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+          <ul class="our-team__list">
+            <li class="our-team__item">
+              <a class="our-team__img-link" href="#">
+                <picture>
+                  <source srcset="../dist/img/team-img1.webp" type="image/webp">
+                  <img loading="lazy" src="./img/team/team-img1.png" width="413" height="500" alt="oleksandr">
+                </picture>
+              </a>
+              <div class="our-team__row">
+                <div class="our-team__wrapper-title">
+                  <a href="#" class="our-team__title">Олександр Кац</a>
+                  <p class="our-team__subtitle">Керуючий партнер</p>
+                </div>
+                <a class="our-team__link" href="#">
+                  <svg width="32" height="32" fill="none">
+                    <circle cx="16" cy="16" r="16" transform="rotate(-90 16 16)" fill="#F5F5FA"/>
+                    <path d="M13.7144 22.8571L20.5715 16L13.7144 9.14283" stroke="#24A3FF" stroke-width="2"/>
+                  </svg>                    
+                </a>
+              </div>
+            </li>
+            <li class="our-team__item">
+              <a class="our-team__img-link" href="#">
+                <picture>
+                  <source srcset="../dist/img/team-img2.webp" type="image/webp">
+                  <img loading="lazy" src="./img/team/team-img2.png" width="413" height="500" alt="oleksandr">
+                </picture>
+              </a>
+              <div class="our-team__row">
+                <div class="our-team__wrapper-title">
+                  <a href="#" class="our-team__title">Олександр Кац</h4>
+                  <p class="our-team__subtitle">Керуючий партнер</p>
+                </div>
+                <a class="our-team__link" href="#">
+                  <svg width="32" height="32" fill="none">
+                    <circle cx="16" cy="16" r="16" transform="rotate(-90 16 16)" fill="#F5F5FA"/>
+                    <path d="M13.7144 22.8571L20.5715 16L13.7144 9.14283" stroke="#24A3FF" stroke-width="2"/>
+                  </svg>                    
+                </a>
+              </div>
+            </li>
+            <li class="our-team__item">
+              <a class="our-team__img-link" href="#">
+                <picture>
+                  <source srcset="../dist/img/team-img3.webp" type="image/webp">
+                  <img loading="lazy" src="./img/team/team-img3.png" width="413" height="500" alt="oleksandr">
+                </picture>
+              </a>
+              <div class="our-team__row">
+                <div class="our-team__wrapper-title">
+                  <a href="#" class="our-team__title">Олександр Кац</a>
+                  <p class="our-team__subtitle">Керуючий партнер</p>
+                </div>
+                <a class="our-team__link" href="#">
+                  <svg width="32" height="32" fill="none">
+                    <circle cx="16" cy="16" r="16" transform="rotate(-90 16 16)" fill="#F5F5FA"/>
+                    <path d="M13.7144 22.8571L20.5715 16L13.7144 9.14283" stroke="#24A3FF" stroke-width="2"/>
+                  </svg>                    
+                </a>
+              </div>
+            </li>
+            <li class="our-team__item">
+              <a class="our-team__img-link" href="#">
+                <picture>
+                  <source srcset="../dist/img/team-img4.webp" type="image/webp">
+                  <img loading="lazy" src="./img/team/team-img4.png" width="413" height="500" alt="oleksandr">
+                </picture>
+              </a>
+              <div class="our-team__row">
+                <div class="our-team__wrapper-title">
+                  <a href="#" class="our-team__title">Олександр Кац</a>
+                  <p class="our-team__subtitle">Керуючий партнер</p>
+                </div>
+                <a class="our-team__link" href="#">
+                  <svg width="32" height="32" fill="none">
+                    <circle cx="16" cy="16" r="16" transform="rotate(-90 16 16)" fill="#F5F5FA"/>
+                    <path d="M13.7144 22.8571L20.5715 16L13.7144 9.14283" stroke="#24A3FF" stroke-width="2"/>
+                  </svg>                    
+                </a>
+              </div>
+            </li>
+            <li class="our-team__item">
+              <a class="our-team__img-link" href="#">
+                <picture>
+                  <source srcset="../dist/img/team-img5.webp" type="image/webp">
+                  <img loading="lazy" src="./img/team/team-img5.png" width="413" height="500" alt="oleksandr">
+                </picture>
+              </a>
+              <div class="our-team__row">
+                <div class="our-team__wrapper-title">
+                  <a href="#" class="our-team__title">Олександр Кац</a>
+                  <p class="our-team__subtitle">Керуючий партнер</p>
+                </div>
+                <a class="our-team__link" href="#">
+                  <svg width="32" height="32" fill="none">
+                    <circle cx="16" cy="16" r="16" transform="rotate(-90 16 16)" fill="#F5F5FA"/>
+                    <path d="M13.7144 22.8571L20.5715 16L13.7144 9.14283" stroke="#24A3FF" stroke-width="2"/>
+                  </svg>                    
+                </a>
+              </div>
+            </li>
+            <li class="our-team__item">
+              <a class="our-team__img-link" href="#">
+                <picture>
+                  <source srcset="../dist/img/team-img6.webp" type="image/webp">
+                  <img loading="lazy" src="./img/team/team-img6.png" width="413" height="500" alt="oleksandr">
+                </picture>
+              </a>
+              <div class="our-team__row">
+                <div class="our-team__wrapper-title">
+                  <a href="#" class="our-team__title">Олександр Кац</a>
+                  <p class="our-team__subtitle">Керуючий партнер</p>
+                </div>
+                <a class="our-team__link" href="#">
+                  <svg width="32" height="32" fill="none">
+                    <circle cx="16" cy="16" r="16" transform="rotate(-90 16 16)" fill="#F5F5FA"/>
+                    <path d="M13.7144 22.8571L20.5715 16L13.7144 9.14283" stroke="#24A3FF" stroke-width="2"/>
+                  </svg>                    
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <div class="footer__contacts-wrapper">
+              <p class="footer__location">Одеса, Адміральський пр., 3</p>
+              <a class="footer__look-map footer__dots" href="#">Подивитися на мапі</a>
+            </div>
+            <div class="footer__links-wrapper">
+              <a class="footer__facebook-link " href="#">
+                <svg width="38" height="38">
+                  <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
+                </svg>
+              </a>
+              <a class="footer__tell-link footer__dots" href="tel:+380503901591">+38 (050) 390 15 91</a>
+              <a class="footer__mail-link footer__dots" href="mailto:contact@hlegals.net">contact@hlegals.net</a>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__copy-text">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

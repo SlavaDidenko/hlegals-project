@@ -47,9 +47,12 @@
     @extend %norms-medium;
     @include fontsize(24,28);
     color: $active-regular;
-
+    transition: all 0.3s ease;
     @media (max-width: $phone-wide) {
       @include fontsize(18,21);
+    }
+    &:hover{
+      color: $accent;
     }
   }
 

@@ -1,6 +1,7 @@
 import './index.html';
 import './about.html';
 import './services.html';
+import './team.html';
 import './index.scss';
 
 import './modules/header';

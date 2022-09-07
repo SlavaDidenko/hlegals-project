@@ -13,14 +13,14 @@ export default class ShowPublications {
           button.parentElement.remove();
           return;
         }
-        const { title, subtitle, text, img } = data[this.length];
+        const { title, subtitle, text, img, webp } = data[this.length];
         const li = document.createElement('li');
         li.classList.add('publications__card');
         li.classList.add('card');
         li.innerHTML = `
         <a href="#" class="card__content-img ${img ? '' : 'none'}">
         <picture>
-          <!-- <source srcset="../dist/img/.webp" type="image/webp"> -->
+          <source srcset="${webp}" type="image/webp">
           <img loading="lazy" src="${img}" width="414" height="233">
         </picture>
         </a>

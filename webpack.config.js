@@ -40,6 +40,14 @@ module.exports = {
       filename: 'services.html',
       template: './src/services.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'service-page.html',
+      template: './src/service-page.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'team.html',
+      template: './src/team.html',
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
